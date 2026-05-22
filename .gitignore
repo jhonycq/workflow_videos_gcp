@@ -1,0 +1,36 @@
+# Output files (videos, images, audio)
+out/
+*.mp4
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Models (Whisper, etc.)
+models/
+
+# Temporary files
+/tmp/
+*.tmp
