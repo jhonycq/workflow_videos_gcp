@@ -1,0 +1,52 @@
+[DIRECTRICES DE ESTILO VISUAL Y NARRATIVO PARA LA IA]
+Estilo de Arte: "[REEMPLAZAR CON ESTILO, ej. Ultra-Realistic Cinematic o Dark Studio Ghibli]". 
+Atmósfera: Extremadamente oscura, sombría y opresiva. Uso de claroscuros, niebla densa, iluminación fría y atmósfera andina auténtica.
+Formato: Serie de terror folclórico (8 episodios/escenas).
+Regla Principal: Horror psicológico. Cero jumpscares. Ritmo tenso.
+
+[DATOS DEL CAPÍTULO DE HOY]
+Mito / Tema: La Cabeza Voladora (Uma)
+Protagonista y Conflicto: Mateo, un antropólogo que sufre de culpa profunda tras haber abandonado a su abuela anciana en un pueblo aislado de los Andes.
+
+[ESTRUCTURA DE ESCENAS - 8 EPISODIOS CONTINUOS]
+(Instrucción para LLM: Mantén el audio narrado conciso como un gancho, y la acción visual inquietante).
+
+ESCENA 1: El Regreso
+- Visual: Mateo llega a una lúgubre cabaña de piedra en la helada puna andina. El viento aúlla. La cabaña está vacía, pero en la cama de su abuela fallecida hay tierra negra y removida.
+- Diálogo (Narrador / Gancho): "Volví a la montaña buscando paz, pero la montaña me estaba esperando."
+- Acción Visual / Cliffhanger: La cámara hace un zoom in lento hacia la tierra en la cama; un rasguño profundo resuena en el techo de calamina.
+
+ESCENA 2: La Advertencia
+- Visual: Bajo un cielo gris y triste, Mateo descubre gruesos mechones de cabello negro enredados en los marcos de la puerta. Sobre una mesa rústica, hay un cuaderno abierto con el dibujo perturbador de una cabeza flotante.
+- Diálogo (Narrador / Gancho): "Los muertos en la puna no descansan si no pagas su deuda."
+- Acción Visual / Cliffhanger: La puerta principal de madera pesada se abre violentamente sola hacia el abismo neblinoso del exterior.
+
+ESCENA 3: El Silencio Asfixiante
+- Visual: La neblina envuelve totalmente la camioneta de Mateo. No hay animales. Sobre el capó del auto, se ven manchas frescas de sangre en forma de huellas redondas y pesadas.
+- Diálogo (Narrador / Gancho): "La altura no te mata de frío, te mata de silencio."
+- Acción Visual / Cliffhanger: Mateo mira aterrorizado por el espejo retrovisor. En el reflejo, una sombra oscura y esférica flota inerte entre la bruma y desaparece.
+
+ESCENA 4: El Origen
+- Visual: Mateo excava con desesperación el suelo de tierra de la cabaña. Desentierra un cofre de madera podrida que contiene unas tijeras de trasquilar oxidadas, sal gruesa y un espejo roto.
+- Diálogo (Narrador / Gancho): "Mi abuela no murió de vejez. Murió peleando."
+- Acción Visual / Cliffhanger: Mientras sostiene las tijeras oxidadas, las sombras del cuarto se alargan y afuera comienza a escucharse el llanto macabro de una anciana, como si riera y llorara a la vez.
+
+ESCENA 5: El Asedio
+- Visual: Noche absoluta. El interior de la cabaña está iluminado apenas por las brasas rojas de una chimenea. Una sombra pesada cae desde el exterior hacia el techo, bajando por el conducto.
+- Diálogo (Narrador / Gancho): "Cuando el aire huele a azufre y sangre, no abras los ojos."
+- Acción Visual / Cliffhanger: Un montón de cenizas cae violentamente sobre las brasas. Una larga y densa cabellera negra empieza a asomarse colgando desde la oscuridad de la chimenea.
+
+ESCENA 6: El Encuentro
+- Visual: La Cabeza cae rodando al piso de piedra. Es el rostro pálido y marchito de su abuela, con ojos en blanco y colmillos desgastados. Se eleva lentamente, impulsada por sus largos cabellos como alas grotescas.
+- Diálogo (Narrador / Gancho): "Nunca mires a los ojos de lo que ya no tiene corazón."
+- Acción Visual / Cliffhanger: Mateo retrocede temblando con las tijeras en alto, pero la cabeza sonríe macabramente.
+
+ESCENA 7: El Sacrificio (Plot Twist 1)
+- Visual: La cabeza flotante vuela agresivamente, pero no muerde: sus cabellos buscan enredarse en el cuerpo de Mateo. Mateo comprende que su abuela era la bruja original, y necesita su sangre para vivir.
+- Diálogo (Narrador / Gancho): "La sangre siempre llama a la sangre."
+- Acción Visual / Cliffhanger: La cabeza se lanza salvajemente contra el cuello de Mateo en un ataque frenético en medio de la oscuridad iluminada por destellos de la chimenea.
+
+ESCENA 8: El Intercambio (Plot Twist 2 / Final)
+- Visual: En un acto reflejo, Mateo corta los cabellos malditos con las tijeras, haciendo caer la cabeza al fuego. Pero a la mañana siguiente, entre la neblina andina pacífica, el cuerpo de Mateo yace decapitado en el suelo de la cabaña.
+- Diálogo (Narrador / Cierre): "La cordillera siempre cobra lo que le debes."
+- Acción Visual / Cierre: A lo lejos, volando libremente y alejándose hacia las nubes altas de los Andes, se ve una cabeza flotante con cabello oscuro joven, moviéndose grácilmente en el frío.

@@ -1,0 +1,157 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                 VIDEO GENERATOR V3 - QUICK START GUIDE                      ║
+║                    ElevenLabs Dual-Narrator Edition                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+🎤 NARRADORAS:
+   • Norah (Narradora):   kcQkGnn0HAT2JRDQ4Ljp  ← Establece escena, guía narrativa
+   • Daniela (Niño):      ajOR9IDAaubDK5qtLUqQ  ← Reacciona emocionalmente
+
+───────────────────────────────────────────────────────────────────────────────
+
+📋 INSTALACIÓN (1ª VEZ):
+
+   1. cd "Proyecto Python V3"
+   2. pip install elevenlabs>=1.0.0
+   3. python test_elevenlabs_setup.py    ← Debe pasar 7/7 tests
+
+───────────────────────────────────────────────────────────────────────────────
+
+🚀 COMANDOS PRINCIPALES:
+
+   VALIDAR SETUP:
+   $ python test_elevenlabs_setup.py
+
+   DRY RUN (sin imágenes/videos):
+   $ python main.py --theme "tu tema" --dry-run --no-qa
+
+   FULL RUN (completo):
+   $ python main.py --theme "tu tema" --scenes 4 --no-qa
+
+   CON DURACIÓN MÁXIMA:
+   $ python main.py --theme "tu tema" --max-duration 60 --no-qa
+
+   RESUMIR RUN ANTERIOR:
+   $ python main.py --resume 20260328_142530
+
+───────────────────────────────────────────────────────────────────────────────
+
+📁 OUTPUT LOCATIONS:
+
+   Después de correr main.py:
+
+   out/{run_id}/
+   ├── manifest.json              ← Diálogos (speaker, text, emotion)
+   ├── narration.wav              ← Audio dual-narrador (Norah + Daniela)
+   ├── final.mp4                  ← Video sin audio
+   ├── final_with_narration.mp4   ← Video + narración
+   └── final_with_subtitles.mp4   ← Video + narración + subtítulos
+
+───────────────────────────────────────────────────────────────────────────────
+
+🎭 EMOCIONES SOPORTADAS:
+
+   neutral   → Narración base / informativa
+   calm      → Momentos pacíficos / reflexivos
+   wonder    → Descubrimientos / magia
+   suspense  → Misterio / tensión
+   fear      → Aterrador / ominoso
+   dramatic  → Climax / intenso
+   excited   → Energía / acción / entusiasmo
+
+───────────────────────────────────────────────────────────────────────────────
+
+🎤 AUDIO TAGS (V3):
+
+   Para el Niño (Daniela):
+   [gasps]    → ¡Sorpresa! ¿Qué fue eso?
+   [excited]  → ¡Qué genial!
+   [nervous]  → Tengo miedo...
+   [laughs]   → ¡Jajaja!
+   [whispers] → Susurro secreto
+   [cries]    → Llorando
+   [sigh]     → Suspiro
+
+   Para la Narradora (Norah):
+   [calm]           → Entrega pacífica
+   [pause]          → Pausa media (~0.5s)
+   [short pause]    → Pausa breve (~0.25s)
+   [long pause]     → Pausa larga (~1s)
+
+───────────────────────────────────────────────────────────────────────────────
+
+📊 VERIFICAR AUDIO GENERADO:
+
+   Reproducir:
+   $ ffplay "out/{run_id}/narration.wav"
+
+   Duración:
+   $ ffprobe -v error -show_entries format=duration \
+     -of default=noprint_wrappers=1:nokey=1 \
+     "out/{run_id}/narration.wav"
+
+   Escuchar con Norah y Daniela:
+   $ ffplay "out/{run_id}/final_with_narration.mp4"
+
+───────────────────────────────────────────────────────────────────────────────
+
+🔧 CONFIGURACIÓN CLAVE (config.py):
+
+   ELEVENLABS_API_KEY = "sk_2e91af4d3359e7a96c89c5523a3f1f1b7bac305644c9c476"
+   NARRATOR_VOICE_ID = "kcQkGnn0HAT2JRDQ4Ljp"
+   CHILD_VOICE_ID = "ajOR9IDAaubDK5qtLUqQ"
+   ELEVENLABS_MODEL = "eleven_v3"
+
+───────────────────────────────────────────────────────────────────────────────
+
+📖 DOCUMENTACIÓN:
+
+   Quick Reference:       QUICK_START.txt       ← Este archivo
+   User Guide:            README_V3.md
+   Technical Deep Dive:   ELEVENLABS_OPTIMIZATION.md
+   Setup Checklist:       SETUP_COMPLETE.md
+
+───────────────────────────────────────────────────────────────────────────────
+
+🎯 FLUJO TÍPICO (1ª VEZ):
+
+   1. python test_elevenlabs_setup.py
+      ↓ Debe pasar 7/7 tests
+
+   2. python main.py --theme "un zorro" --dry-run --no-qa
+      ↓ Genera manifest.json con diálogos (sin audio)
+
+   3. Verifica: cat out/{run_id}/manifest.json | grep -A2 dialogue
+      ↓ Debe ver alternancia narrator/child
+
+   4. python main.py --theme "un zorro" --scenes 2 --no-qa
+      ↓ Genera audio + imágenes + videos (completo pero rápido)
+
+   5. ffplay "out/{run_id}/final_with_subtitles.mp4"
+      ↓ Escucha y verifica dual-narrador
+
+───────────────────────────────────────────────────────────────────────────────
+
+⚡ TIPS DE PERFORMANCE:
+
+   • --no-qa        → Salta visual QA (2x más rápido)
+   • --images-only  → Solo imágenes, no videos (para testing)
+   • --dry-run      → Solo manifest, sin generación
+   • --max-duration → Limita duración total (útil para iteración)
+
+───────────────────────────────────────────────────────────────────────────────
+
+❌ Si algo falla:
+
+   1. python test_elevenlabs_setup.py     ← Valida setup
+   2. tail -50 out/{run_id}/logs/*.log    ← Lee logs
+   3. Abre ELEVENLABS_OPTIMIZATION.md     ← Soluciona problemas
+   4. Revisa config.py voice IDs          ← Verifica credenciales
+
+───────────────────────────────────────────────────────────────────────────────
+
+🎬 ¡Listo para generar videos con dual-narrador!
+
+   Next step: python main.py --theme "tu tema aquí" --dry-run --no-qa
+
+───────────────────────────────────────────────────────────────────────────────
